@@ -31,7 +31,7 @@ public class TestLoginActions extends BaseTest{
     public void testLoginPositive() throws IOException {
         loginPage = new LoginPage(driver);
         mainPage = new MainPage(driver);
-        List<String> formData = FileReaderUtils.getTestData("src/test/resources/src/test/resources/PositiveLoginAccountData.txt");
+        List<String> formData = FileReaderUtils.getTestData("src/test/resources/PositiveLoginAccountData.txt");
         Account accountObject = new Account(formData);
         Assert.assertTrue(loginPage.usernameInputField.isEnabled(),"Username input field is not enabled");
         Assert.assertTrue(loginPage.usernameInputField.isDisplayed(), "Username input field is not visible");
