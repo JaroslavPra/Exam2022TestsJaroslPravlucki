@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="TestSuite">
+    <test name="RegisterTest" parallel="false" preserve-order="true">
+        <groups>
+            <run>
+                <include name="RegisterTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestRegisterActions"/>
+        </classes>
+    </test>
+    <test name="LoginTest" parallel="false" preserve-order="true">
+        <groups>
+            <run>
+                <include name="LoginTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestLoginActions"/>
+        </classes>
+    </test>
+    <test name="LogoutTest" parallel="false" preserve-order="true">
+        <groups>
+            <run>
+                <include name="LogoutTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestLogoutActions"/>
+        </classes>
+    </test>
+</suite>
